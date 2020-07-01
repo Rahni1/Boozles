@@ -1,0 +1,198 @@
+/*navbar */
+.header {
+  font-family: 'Roboto', sans-serif;
+ color: rgb(192, 171, 155);
+  margin-top: 11px;
+  margin-left: 20px;
+}
+ li {
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 11px;
+  font-family: 'Roboto', sans-serif;
+} 
+li a {
+  display: inline;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 11px 11px;
+  text-decoration: none;
+ 
+} 
+
+li a:hover {
+background-color: rgb(192, 171, 155);
+}
+
+#sidebarMenu a.active {
+  background: rgb(183, 206, 211);
+  text-decoration: underline;
+}
+
+#sidebarMenu {
+    height: 64%;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    margin-top: 0px;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background: rgb(183, 206, 211);
+  }
+  .sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .sidebarMenuInner li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  /* Style & animate the hamburger toggle button.
+  view source */
+  input[type="checkbox"]:checked ~ #sidebarMenu { transform: translateX(0); }
+  input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+  }
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 28px;
+    right: 20px;
+    height: 22px;
+    width: 22px;
+  }
+  .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(192, 171, 155);
+  }
+  .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+  }
+/* REVIEWS */
+.reviews {
+    margin: 50px auto;
+    display: block;
+  }
+  
+  .reviews .row {
+    margin-top: 15px;
+    display: block;
+  }
+  
+  .col-md-4 {
+    margin: 40px auto;
+  }
+  .parent {
+    padding: 40px 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(183, 206, 211);
+    color: white;
+  }
+  .parent h2 {
+    font-size: 26px;
+    margin-top: -20px;
+    font-family: 'Roboto', sans-serif;
+  }
+    .NYTimeslink {
+      color: rgb(37, 180, 216);
+    }
+    .NYTimeslink:visited {
+      color: white;
+    }
+  blockquote {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .parent {
+    width: 1100px;
+    margin: 25px;
+    padding-left: 30px;
+    display: flex;
+  
+  }
+  .parent:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+ 
+  img {
+    padding-left: 160px;
+    padding-top: 20px;
+  } 
+  img:first-child {
+    margin-left: 330px;
+    margin-top: -18px;
+    padding-bottom: 30px;
+  }
+
+  /* PAGE DESCRIPTION */
+.description {
+  margin-left: 25px;
+  margin-top: 7px;
+  margin-bottom: -15px;
+  margin-right: 10px;
+  padding-bottom: 0px;
+  color: rgb(192, 171, 155);
+  font-size: 18px;
+  font-family: 'Alatsi', sans-serif;
+}
